@@ -1,0 +1,32 @@
+.parent
+{
+
+display: flex;
+
+
+}
+
+.box1
+{
+
+background-color: gray;
+height: 100vh;
+width: 50%;
+
+}
+
+.box2
+{
+
+background-color: darkgray;
+height: 50vh;
+width: 25%;
+}
+
+.box3
+{
+
+background-color: lightgray;
+height: 50vh;
+width: 25%;
+}
