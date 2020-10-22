@@ -6,6 +6,15 @@ display: flex;
 
 }
 
+.box1, .box2, .box3
+{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
 .box1
 {
 
@@ -21,6 +30,7 @@ width: 50%;
 background-color: darkgray;
 height: 50vh;
 width: 25%;
+flex-direction: row;
 }
 
 .box3
@@ -29,4 +39,6 @@ width: 25%;
 background-color: lightgray;
 height: 50vh;
 width: 25%;
+flex-direction: row;
+
 }
