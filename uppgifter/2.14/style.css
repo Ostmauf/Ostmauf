@@ -1,8 +1,24 @@
+.container, .parent, .box1_holder, .box2-3_holder
+{
+
+height: 100vh;
+width: 100%;  
+
+}
+
+.container
+{
+
+display: flex;
+flex-direction: row;
+
+}
+
 .parent
 {
 
 display: flex;
-
+flex-direction: row;
 
 }
 
@@ -20,7 +36,7 @@ align-items: center;
 
 background-color: gray;
 height: 100vh;
-width: 50%;
+width: 100%;
 
 }
 
@@ -29,8 +45,9 @@ width: 50%;
 
 background-color: darkgray;
 height: 50vh;
-width: 25%;
+width: 100%;
 flex-direction: row;
+
 }
 
 .box3
@@ -38,7 +55,7 @@ flex-direction: row;
 
 background-color: lightgray;
 height: 50vh;
-width: 25%;
+width: 100%;
 flex-direction: row;
 
 }
