@@ -122,3 +122,22 @@ height: 40rem;
 
 }
 
+.a_header_text:hover
+{
+
+color: darkblue;
+background-color: lightblue;
+border-radius: 100px;
+padding: 5px;
+
+}
+
+.a_content_text:hover
+{
+
+background-color: white;
+color: darkblue;
+border: 2px solid blue;
+
+}
+
