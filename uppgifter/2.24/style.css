@@ -1,14 +1,9 @@
-a
-{
-
-text-decoration: none;
-color: white;
-}
 
 .parent
 {
 
 display: flex;
+flex-direction: column;
 height: 100vh;
 width: 100vw;
 
@@ -27,10 +22,11 @@ width: 100%;
 
 }
 
-.heading_content_text
+.heading_content
 {
 
 display: flex;
+justify-content: center;
 flex-direction: row;
 align-items: center;
 height: 100px;
@@ -43,11 +39,12 @@ width: 600px;
 
 background-image: url(psn_icon.jpg);
 background-position: center;
-background-size: 15px;
+background-size: 2.5rem;
 background-repeat: no-repeat;
-height: 15px;
-width: 30px;
-margin-right: 5px;
+height: 2.5rem;
+width: 2.5rem;
+margin-right: 1rem;
+margin-bottom: 0.5rem;
 
 }
 
@@ -57,12 +54,71 @@ margin-right: 5px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width: 20%;
-height: 25%;
-
-.content
-{
-
-
+width: 25rem;
+height: 3rem;
 
 }
+
+.a_header_text
+{
+
+text-decoration: none;
+color: white;
+font-size: 2rem;
+
+}
+
+.content, .content_content
+{
+
+width: 100vw;
+height: 80vh;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.content_text
+{
+
+width: 25vw;
+height: 40rem;
+color: darkblue;
+font-weight: bold;
+
+}
+
+h1, .a_content_text
+{
+
+margin-left: 10rem;
+margin-top: 10rem;
+
+}
+
+.a_content_text
+{
+
+text-decoration: none;
+color: white;
+background-color: darkblue;
+border-radius: 3px;
+padding: 7px;
+font-size: 1.5rem;
+
+}
+
+
+.content_photo
+{
+
+background-image: url(ps5_content_test.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 60rem;
+width: 70vw;
+height: 40rem;
+
+}
+
