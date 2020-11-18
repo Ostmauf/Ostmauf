@@ -11,7 +11,7 @@ align-items: center;
 .text
 {
 
-max-width: 60rem;
+max-width: 50rem;
 max-height: 60rem;
 flex-shrink: 1;
 min-height: 50rem;
