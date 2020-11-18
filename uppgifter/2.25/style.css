@@ -13,11 +13,11 @@ align-items: center;
 .text
 {
 
-width: 60rem;
-height: 80rem;
+max-width: 60rem;
 display: flex;
 flex-direction: column;
 flex-shrink: 1;
+min-height: 50rem
 
 }
 
@@ -81,4 +81,5 @@ h3, h1, p, li, ul, a
 display: flex;
 flex-direction: column;
 flex-shrink: 1;
+margin-left: 10px;
 }
