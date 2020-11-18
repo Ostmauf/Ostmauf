@@ -67,14 +67,25 @@ font-family: 'Lobster', cursive;
 
 }
 
+h3, h1, p, li
+{
+
+margin: 1rem 1rem 0rem 1rem;  
+line-height: 1.5rem;
+
+}
+
 h3
 {font-size: x-large;}
 
+h1
+{font-size: xx-large;}
+
+strong
+{font-weight: bolder;}
+
 a
 {text-decoration: none;}
-
-h3, h1, p, li, ul
-{margin-left: 10px;}
 
 li
 {list-style: square;}
@@ -82,8 +93,3 @@ li
 ul
 {margin-left: 40px;}
 
-h1
-{font-size: xx-large;}
-
-strong
-{font-weight: bolder;}
