@@ -1,0 +1,84 @@
+.parent
+{
+
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.text
+{
+
+width: 60rem;
+height: 80rem;
+display: flex;
+flex-direction: column;
+flex-shrink: 1;
+
+}
+
+li
+{
+
+list-style: square;
+
+}
+
+ul
+{
+
+margin-left: 40px;
+
+}
+
+a
+{
+
+text-decoration: none;
+}
+
+p, li
+{
+
+font-size: larger;
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Dancing Script', cursive;
+
+}
+
+h3, h1
+{
+
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+
+}
+
+h1
+{
+
+font-size: xx-large;
+
+}
+
+h3
+{
+
+font-size: x-large;
+display: flex;
+flex-direction: column;
+flex-shrink: 1;
+}
+
+h3, h1, p, li, ul, a
+{
+
+display: flex;
+flex-direction: column;
+flex-shrink: 1;
+}
