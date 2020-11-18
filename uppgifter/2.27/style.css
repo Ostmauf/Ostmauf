@@ -1,0 +1,50 @@
+.parent
+{
+
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+
+}
+
+.box
+{
+
+width: 50vw;
+height: 100vh;
+
+}
+
+.box.blue
+{
+
+background-color: blue;
+
+}
+
+.box.orange
+{
+
+background-color: orange;
+
+}
+
+.box.red
+{
+
+background-color: red;
+
+}
+
+@media screen and (max-width: 900px)
+{
+
+    .box.red
+    {
+    
+    display: none;
+
+    }
+
+}
