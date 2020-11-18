@@ -5,17 +5,30 @@ width: 100vw;
 height: 100vh;
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+.boxblue_and_boxorange
+{
+
+display: flex;
+flex-grow: 1;
 
 }
 
 .box
 {
 
-width: 50vw;
-height: 100vh;
+flex-grow: 1;
 
 }
+.box.blue, .box.orange
+{
 
+display: flex;
+flex-basis: auto;
+}
 .box.blue
 {
 
@@ -43,8 +56,10 @@ background-color: red;
     .box.red
     {
     
-    display: none;
+    flex-grow: 2;
+    
 
     }
 
 }
+
