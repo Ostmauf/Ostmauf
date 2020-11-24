@@ -59,8 +59,14 @@ background-color: red;
     .box.red
     {
     
-        flex-grow: 2;
-        
+    flex-grow: 2;
+
+    }
+
+    .parent
+    {
+
+    flex-direction: column;
 
     }
 
@@ -72,19 +78,21 @@ background-color: red;
     .parent
     {
 
-        flex-direction: column;
+    flex-direction: column;
+
     }
 
     .boxblue_and_boxorange
     {
 
-        flex-direction: column;
+    flex-direction: column;
+
     }
 
     .box.red
     {
     
-        flex-grow: 1;
+    flex-grow: 1;
 
     }
 
