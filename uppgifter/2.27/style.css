@@ -13,7 +13,7 @@ flex-wrap: wrap;
 {
 
 display: flex;
-flex-grow: 1;
+flex-grow: 2;
 
 }
 
@@ -23,12 +23,15 @@ flex-grow: 1;
 flex-grow: 1;
 
 }
+
 .box.blue, .box.orange
 {
 
 display: flex;
 flex-basis: auto;
+
 }
+
 .box.blue
 {
 
@@ -52,12 +55,43 @@ background-color: red;
 
 @media screen and (max-width: 900px)
 {
+    
+    .parent
+    {
+
+    flex-direction: column;
+
+    }
 
     .box.red
     {
     
-    flex-grow: 2;
+        flex-grow: 2;
+
+    }
+
+
+}
+
+@media screen and (max-width: 500px)
+{
+
+    .parent
+    {
+
+        flex-direction: column;
+    }
+
+    .boxblue_and_boxorange
+    {
+
+        flex-direction: column;
+    }
+
+    .box.red
+    {
     
+        flex-grow: 1;
 
     }
 
