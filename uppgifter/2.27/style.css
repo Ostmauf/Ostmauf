@@ -55,21 +55,14 @@ background-color: red;
 
 @media screen and (max-width: 900px)
 {
-    
-    .parent
-    {
-
-    flex-direction: column;
-
-    }
 
     .box.red
     {
     
         flex-grow: 2;
+        
 
     }
-
 
 }
 
