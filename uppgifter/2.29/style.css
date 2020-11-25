@@ -1,0 +1,125 @@
+.parent
+{
+
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+
+}
+
+.header
+{
+
+height: 10vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: red;
+
+}
+
+.nav
+{
+  
+height: 80%;
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.links
+{
+
+height: 50%;
+width: 30%;
+display: flex;
+justify-content: space-between;
+
+}
+
+a
+{
+
+color: white;
+font-size: 30px;
+text-decoration: none;
+
+}
+
+.content
+{
+
+display: flex;
+width: 100vw;
+height: 80vh;
+
+}
+
+.text, .picture
+{
+
+width: 50vw;
+height: 80vh;
+
+}
+
+h1
+{margin-left: 10rem;}
+
+h1
+{
+
+font-size: 100px;
+color: red;
+
+}
+
+p, h3
+{margin: 0px 50px 0px 100px;}
+
+p
+{font-size: 30px;}
+
+h3
+{
+    
+font-size: 50px;
+margin-top: 20px;
+
+}
+
+.musk
+{
+
+width: 400px;
+height: 400px;
+background-image: url(elon_musk.PNG);
+background-size: 400px;
+background-repeat: no-repeat;
+margin: 30px 0px;
+
+}
+
+.musk-car-pic
+{
+
+background-image: url(elon_car.PNG);
+background-position: center;
+background-size: 1000px;
+background-repeat: no-repeat;
+width: 800px;
+height: 400px;
+
+}
+
+.footer
+{
+
+width: 100vw;
+height: 20vh;
+
+}
