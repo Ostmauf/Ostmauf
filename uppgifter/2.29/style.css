@@ -6,6 +6,7 @@ width: 100vw;
 display: flex;
 flex-direction: column;
 
+
 }
 
 .header
@@ -47,6 +48,24 @@ a
 color: white;
 font-size: 30px;
 text-decoration: none;
+min-width: 200px;
+
+}
+
+.a-hem
+{
+
+border-bottom: 10px solid black;
+padding: 0px 0px 43px 0px;
+min-width: 100px;
+border-width: 100px;
+
+
+}
+
+a:hover
+{
+
 
 }
 
@@ -54,27 +73,47 @@ text-decoration: none;
 {
 
 display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 width: 100vw;
-height: 80vh;
+
+
 
 }
 
-.text, .picture
+.text
 {
 
-width: 50vw;
-height: 80vh;
+display: flex;
+width: 65vw;
+height: 70vh;
+
+
 
 }
 
-h1
-{margin-left: 10rem;}
+.text_text
+{
+
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 40rem;
+width: 50vh;
+
+
+
+}
+
 
 h1
 {
 
-font-size: 100px;
+font-size: 50px;
 color: red;
+height: 100px;
+margin-left: 100px;
 
 }
 
@@ -82,7 +121,7 @@ p, h3
 {margin: 0px 50px 0px 100px;}
 
 p
-{font-size: 30px;}
+{font-size: 20px;}
 
 h3
 {
@@ -100,7 +139,8 @@ height: 400px;
 background-image: url(elon_musk.PNG);
 background-size: 400px;
 background-repeat: no-repeat;
-margin: 30px 0px;
+margin: 0;
+order: 2;
 
 }
 
@@ -121,5 +161,12 @@ height: 400px;
 
 width: 100vw;
 height: 20vh;
+
+}
+
+@media screen and (max-width: 900px)
+{
+
+
 
 }
