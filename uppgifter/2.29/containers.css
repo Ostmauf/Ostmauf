@@ -1,93 +1,59 @@
 .parent
-{
-
-height: 100vh;
-width: 100vw;
-display: flex;
-flex-direction: column;
-
-
-}
+{height: 100vh;}
 
 .header
 {
 
-height: 7vh;
-min-height: 5vh;
-max-height: 5vh;
-width: 100vw;
-min-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
 background-color: red;
+position: fixed;
 
 }
 
-.nav
+.nav 
 {
-  
-height: 80%;
+
 width: 90%;
 min-height: 80%;
 max-height: 80%;
 min-width: 90%;
-display: flex;
-justify-content: center;
-align-items: center;
 
 }
 
-.links
+.links 
 {
 
 height: 50%;
 width: 30%;
-display: flex;
-justify-content: space-between;
 min-width: 40rem;
+justify-content: space-between;
+
 
 }
 
 .content
-{
-
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-width: 100vw;
-
-}
+{height: 300rem;}
 
 .text
 {
 
-display: flex;
-justify-content: center;
-align-items: center;
-height: 45vh;
-max-height: 45vh;
+height: 40rem;
+max-height: 40rem;
 
 }
 
 .content-text
 {
 
-display: flex;
-flex-direction: column;
-width: 40rem;
+width: 26rem;
+position: sticky;
 
 }
 
 .content-musk_pic
 {
 
-display: flex;
-justify-content: center;
-align-items: center;
-order: 2;
 width: 20vw;
+order: 2;
 
 }
 
@@ -97,27 +63,21 @@ width: 20vw;
 .musk-pic
 {
 
-width: 400px;
-height: 400px;
-
 background-image: url(elon_musk.PNG);
-background-size: 400px;
+background-size: 300px;
 background-repeat: no-repeat;
+background-position:  center top;
+width: 300px;
+height: 300px;
 margin: 45px 0px 0px 0px;
-
-
 
 }
 
 .content-musk_car_pic
 {
 
-display: flex;
-justify-content: center;
-align-items: center;
-height: 30vh;
+height: 40vh;
 width: 40vw;
-margin-top: 5rem;
 
 }
 
@@ -129,7 +89,6 @@ background-image: url(elon_car.PNG);
 background-position: center;
 background-size: 1000px;
 background-repeat: no-repeat;
-position: sticky;
 width: 800px;
 height: 400px;
 min-width: 400px;
@@ -139,20 +98,39 @@ min-width: 400px;
 .footer
 {
 
-width: 100vw;
-height: 20vh;
+height: 30vh;
 max-height: 20vh;
+font-family: sans-serif;
 
 }
 
 .text, .content-musk_car_pic, .footer
 {
 
-width: 45vw;
-max-width: 45vh;
+width: 100%;
+max-width: 100%;
 
 }
 
+.parent, .header, .content, .footer, .nav, .links, .text, .content-text, .content-musk_pic, .content-musk_car_pic
+{display: flex;}
+
+.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic
+{justify-content: center;}
+
+.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic
+{align-items: center;}
+
+.parent, .content, .content-text
+{flex-direction: column;}
+
+.parent, .header, .content, .footer, .text
+{
+
+max-width: 100%;
+width: 100%;
+
+}
 
 
 @media screen and (max-width: 900px)
