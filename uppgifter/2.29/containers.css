@@ -58,7 +58,7 @@ order: 2;
 }
 
 .content-text, .content-musk_pic
-{height: 45vh;}
+{height: 60vh;}
 
 .musk-pic
 {
@@ -104,6 +104,13 @@ font-family: sans-serif;
 
 }
 
+.footer-text
+{
+
+width: 50rem;
+
+}
+
 .text, .content-musk_car_pic, .footer
 {
 
@@ -115,10 +122,10 @@ max-width: 100%;
 .parent, .header, .content, .footer, .nav, .links, .text, .content-text, .content-musk_pic, .content-musk_car_pic
 {display: flex;}
 
-.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic
+.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic, .footer
 {justify-content: center;}
 
-.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic
+.header, .nav, .content, .text, .content-musk_pic, .content-musk_car_pic, .footer
 {align-items: center;}
 
 .parent, .content, .content-text
