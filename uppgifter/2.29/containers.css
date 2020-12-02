@@ -27,7 +27,6 @@ width: 30%;
 min-width: 40rem;
 justify-content: space-between;
 
-
 }
 
 .content
@@ -105,11 +104,7 @@ font-family: sans-serif;
 }
 
 .footer-text
-{
-
-width: 50rem;
-
-}
+{width: 50rem;}
 
 .text, .content-musk_car_pic, .footer
 {
@@ -138,12 +133,3 @@ max-width: 100%;
 width: 100%;
 
 }
-
-
-@media screen and (max-width: 900px)
-{
-
-
-
-}
-
