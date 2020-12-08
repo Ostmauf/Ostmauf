@@ -100,6 +100,7 @@ min-width: 400px;
 height: 30vh;
 max-height: 20vh;
 font-family: sans-serif;
+margin-top: 1rem;
 
 }
 
@@ -132,4 +133,37 @@ max-width: 100%;
 max-width: 100%;
 width: 100%;
 
+}
+
+@media only screen and (max-height: 830px)
+{
+    
+    .footer
+    { margin-top: 30px;}
+}
+
+@media only screen and (max-height: 760px)
+{
+    
+    .footer
+    {margin-top: 4.1rem;}
+
+    .text
+    {
+    
+    height: 25rem;
+    margin-bottom: 8rem;
+
+    }
+
+}
+
+@media only screen and (max-height: 600px)
+{
+
+    .content-text
+    {color: blue;}
+
+    .footer
+    {margin-top: 5rem;}
 }
