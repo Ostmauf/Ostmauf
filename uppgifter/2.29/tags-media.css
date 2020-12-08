@@ -34,7 +34,7 @@ a
 color: white;
 font-size: 30px;
 text-decoration: none;
-min-width: 150px;
+
 min-height: 30px;
 
 }
@@ -60,7 +60,22 @@ color: grey;
 @media only screen and (max-height: 760px)
 {
 
-    p 
-    {font-size: 1rem;}
-    
+p 
+{font-size: 1rem;}
+
 }
+
+@media only screen and (max-width: 37rem)
+{
+
+    p 
+    {color: brown;}
+
+    a 
+    {font-size: 1.4rem;}
+
+    .a-hem
+    {min-width: 2rem;}
+
+}
+

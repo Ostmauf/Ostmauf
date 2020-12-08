@@ -3,48 +3,41 @@
 
 .header
 {
-
-background-color: red;
+    
 position: fixed;
+background-color: red;
+z-index: 1;
 
 }
 
 .nav 
 {
-
-width: 90%;
+    
 min-height: 80%;
 max-height: 80%;
-min-width: 90%;
 
 }
 
 .links 
 {
-
+    
 height: 50%;
-width: 30%;
-min-width: 40rem;
+min-width: 35rem;
 justify-content: space-between;
 
 }
 
 .content
-{height: 300rem;}
+{height: 1000rem;}
 
 .text
-{
-
-height: 40rem;
-max-height: 40rem;
-
-}
+{max-height: 40rem;}
 
 .content-text
 {
 
 width: 26rem;
-position: sticky;
+
 
 }
 
@@ -77,6 +70,7 @@ margin: 45px 0px 0px 0px;
 
 height: 40vh;
 width: 40vw;
+margin-top: 2rem;
 
 }
 
@@ -107,13 +101,6 @@ margin-top: 1rem;
 .footer-text
 {width: 50rem;}
 
-.text, .content-musk_car_pic, .footer
-{
-
-width: 100%;
-max-width: 100%;
-
-}
 
 .parent, .header, .content, .footer, .nav, .links, .text, .content-text, .content-musk_pic, .content-musk_car_pic
 {display: flex;}
@@ -139,7 +126,8 @@ width: 100%;
 {
     
     .footer
-    { margin-top: 30px;}
+    {margin-top: 30px;}
+
 }
 
 @media only screen and (max-height: 760px)
@@ -166,4 +154,31 @@ width: 100%;
 
     .footer
     {margin-top: 5rem;}
+
+}
+
+@media only screen and (max-width: 37rem)
+{
+
+    .links
+    {
+        
+    min-width: 25rem;
+        
+    }
+
+    .content-text
+    {
+    
+    max-width: 24rem;
+    max-height: 400rem;
+
+    }
+
+    .text
+    {max-height: 1000rem;}
+
+    .content-text, .content-musk_pic
+    {height: 100vh;}
+
 }
