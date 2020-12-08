@@ -56,3 +56,11 @@ font-size: smaller;
 color: grey;
 
 }
+
+@media only screen and (max-height: 760px)
+{
+
+    p 
+    {font-size: 1rem;}
+    
+}
