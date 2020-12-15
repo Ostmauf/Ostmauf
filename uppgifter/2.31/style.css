@@ -11,11 +11,51 @@ width: 100vw;
 .header
 {
 
+display: flex;
 background-color: black;
-height: 20vh;
-width: 100vw;
+justify-content: center;
+align-items: center;
+height: 5vh;
+width: 100;
 
 }
+
+.icon
+{
+
+background-image: url(cheese-icon.PNG);
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.icon.header
+{
+
+width: 3rem;
+height: 3rem;
+background-size: 3rem;
+
+}
+
+a
+{
+
+text-decoration: none;
+font-size: 2rem;
+
+}
+
+.buttons
+{
+
+width: 40rem;
+height: 2.5rem;
+justify-content: space-between;
+display: flex;
+
+}
+
 
 .content
 {
