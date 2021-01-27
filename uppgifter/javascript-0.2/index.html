@@ -5,16 +5,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Javascript övning 2</title>
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     
-
+<div class="content">
+    <h1 id="rubrik"></h1>
+    <h3 id="under-rubrik-1"></h3>
+    <h3 id="under-rubrik-2"></h3>
+</div>
 
 <script>
 
+let huvudRubrik = document.getElementById("rubrik");
+huvudRubrik.innerHTML = "Välkommen!";
 
-    
+let underRubrik1 = document.getElementById("under-rubrik-1");
+underRubrik1.innerHTML = ("Detta är min fina webbsida.");
+
+let underRubrik2 = document.getElementById("under-rubrik-2");
+underRubrik2.innerHTML = ("Jag övar på HTML, CSS och JavaScript.");
+
 </script>
 </body>
 </html>
