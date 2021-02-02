@@ -7,31 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 <div class="content">
-    <div class="dice">
-        <img src="Pics/dice-1.png" alt="" id="picture">
+        <div class="dice-holder">
+        <img id="dice-1" src="Pics/dice-1.png" width="230" height="130">
+        <img id="dice-2" src="Pics/dice-1.png" width="230" height="130">
+        <img id="dice-3" src="Pics/dice-1.png" width="230" height="130">
+        <img id="dice-4" src="Pics/dice-1.png" width="230" height="130">
+        <img id="dice-5" src="Pics/dice-1.png" width="230" height="130">
+        <img id="dice-6" src="Pics/dice-1.png" width="230" height="130">
     </div>
-    <button class="button" onclick="diceNumberManager()">Button 1</button>
+    <button id="roll">Roll</button>
 </div>
 
-<script>
+<script src="brain.js"></script>
 
-let diceNumber = document.getElementById("dice-number");
-let randomNumber;
-let dicePic = document.getElementById("picture")
-
-function diceNumberManager() {
-    randomNumber = Math.random() * 5 + 1;
-    randomNumber = Math.round(randomNumber);
-    diceNumber.innerHTML = randomNumber;
-
-    let dicePic = document.getElementById("picture"); 
-
-    dicePic.src = "Pics/dice-2.png";
-}
-
-
-</script>
 </body>
 </html>
