@@ -5,6 +5,7 @@ let diceImage3 = document.getElementById("dice-3");
 let diceImage4 = document.getElementById("dice-4");
 let diceImage5 = document.getElementById("dice-5");
 let diceImage6 = document.getElementById("dice-6");
+
 let rollButton = document.getElementById("roll");
 
 //Other
