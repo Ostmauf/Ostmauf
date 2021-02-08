@@ -21,6 +21,7 @@ buttonForDivided.addEventListener("click", calDivided);
 function calPlus() {
 
     sum = parseFloat(num1.value) + parseFloat(num2.value);
+    sum = sum
     sumHolder.innerHTML = sum;
 
 }
