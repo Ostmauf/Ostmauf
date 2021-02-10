@@ -15,7 +15,7 @@ function timeManager() {
 
     dateDiffrenceManager(sommerDate, todaysDate)
 
-    
+    //timeConverter = timeConverter.toFixed(0);
 
     
     /*//To birthday
@@ -44,7 +44,7 @@ function dateDiffrenceManager(startDate, endDate) {
 
     let timeConverter = (startDate.getTime() - endDate.getTime()) / 1000;
     
-    timeConverter = timeConverter.toFixed(0);
+    
     
     console.log(timeConverter);
 
