@@ -122,10 +122,13 @@ let blocks = setInterval(function(){
         }
 
         if(iblockTop - 20 < characterTop && iblockTop > characterTop){
+
             drop++;
+            
             if(iholeLeft <= characterLeft && iholeLeft + 20>=characterLeft){
                 drop = 0;
             }
+
         }
 
     }
@@ -142,7 +145,7 @@ let blocks = setInterval(function(){
     else{
 
         character.style.top = characterTop - 0.5 + "px";
-        
+
     }
 
 },1);
