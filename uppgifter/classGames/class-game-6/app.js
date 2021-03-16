@@ -1,50 +1,42 @@
 const todoInput = document.querySelector(".todo-input");
-const todobutton = document.querySelector(".todo-button");
+const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 
-todobutton.addEventListener("click", addTodo);
+//Event listeners
+todoButton.addEventListener("click", addTodo);
 
 //Funktions
 
 function addTodo(event) {
 
-event.preventDefault();
+    event.preventDefault();
 
-//todoDiv
-const todoDiv = document.createElement("div");
-todoDiv.classList.add(todo);
+    //todoDiv
+    const todoDiv = document.createElement("div");
+    todoDiv.classList.add("todo");
 
-const newTodo = document.createElement("li");
-newTodo.innerText = "hej";
-newTodo.classList.add(todo-item);
-todoDiv.appendChild(newTodo);
+    const newTodo = document.createElement("li");
+    newTodo.innerText = todoInput.value;
+    newTodo.classList.add("todo-item");
+    todoDiv.appendChild(newTodo);
 
-//Complete Button.
-const completedButton = document.createElement("button");
-const checkedButton = document.createElement("button");
+    //Complete Button.
+    const completedButton = document.createElement("button");
 
-completedButton.innerHTML = "<i class = 'fas fa-check'></i>";
-completedButton.classList.add("complete-btn");
-todoDiv.appendChild(completedButton);
+    completedButton.innerHTML = "<i class='fas fa-check'></i>";
+    completedButton.classList.add("complete-btn");
+    todoDiv.appendChild(completedButton);
 
-//Create trash Button.
-const trashButton = document.createElement("button");
-trashButton.innerHTML = "<i class = 'fas fa-trash'></i>";
-trashButton.classList.add("complete-btn");
-todoDiv.appendChild(trashButton);
+    //Create trash Button.
+    const trashButton = document.createElement("button");
+    trashButton.innerHTML = "<i class='fas fa-trash'></i>";
+    trashButton.classList.add("trash-btn");
+    todoDiv.appendChild(trashButton);
 
+    todoList.appendChild(todoDiv);
+
+    //Clear Todo INPUT VALUE
+    todoInput.value = "";
 
 }
 
-
-
-/* 
-<div class="todo">
-
-<li></li>
-<button>Delete</button>
-<button>Checked</button>
-
-</div>
-
-*/ 
