@@ -1,6 +1,10 @@
-import { update as updateSnake, draw as drawSnake, snakeSpeed } from ".snake.js"
+//Imports
+import { update as updateSnake, draw as drawSnake, snakeSpeed } from "./snake.js";
+
+import { update as updateFood, draw as drawFood } from "./food.js";
 
 let lastRenderTime = 0;
+const gameBoard = document.getElementById("game-board");
 
 function main(currentTime) {
 
@@ -8,26 +12,23 @@ function main(currentTime) {
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;
     if (secondsSinceLastRender < 1 / snakeSpeed) return;
 
-    
     lastRenderTime = currentTime;
 
     update()
     draw()
-
 }
 
 window.requestAnimationFrame(main);
 
 function update() {
-
-    updateSnake()
-
+    updateSnake();
+    updateFood();
 }
 
 function draw() {
-
-    drawSnake()
-
+    gameBoard.innerHTML = "";
+    drawSnake(gameBoard);
+    drawFood(gameBoard);
 }
 
-//Info:  15:15 in video
+//Info:  18:23 in video
