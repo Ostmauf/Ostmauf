@@ -1,3 +1,4 @@
+//Variables
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = {x: 0, y: 0}
 
@@ -23,7 +24,6 @@ window.addEventListener("keydown", e => {
             inputDirection = { x: 1, y: 0 }
             break;
     }
-
 })
 
 export function getInputDirection() {
