@@ -12,7 +12,7 @@ const gameBoard = document.getElementById("game-board");
 function main(currentTime) {
     if (gameOver) {
         if (confirm("Game over, press ok to restart")) {
-            window.location = "/"
+            window.location = "/uppgifter/classGames/class-game-7"
         }
         return
     }
@@ -41,7 +41,6 @@ function draw() {
     drawFood(gameBoard);
 }
 
-function checkDeath() {}
+function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
-
-//Info:  18:23 in video
+}
