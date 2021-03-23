@@ -30,3 +30,5 @@ function getRandomFoodPosition() {
     }
     return newFoodPosition;
 }
+
+//ost
