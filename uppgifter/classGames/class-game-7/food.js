@@ -5,7 +5,7 @@ import { randomGridPosition } from "./grid.js";
 //variables
 let food = getRandomFoodPosition();
 
-const EXPANSION_RATE = 5;
+const EXPANSION_RATE = 1;
 
 //Exports
 export function update() {
