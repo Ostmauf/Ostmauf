@@ -10,3 +10,5 @@ function buttonPressed() {
     rubrik.innerHTML = "Det är roligt att vara tillbaka i skolan";
     button.style.display = "none";
 }
+
+//test
