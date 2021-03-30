@@ -1,26 +1,34 @@
+import { createPlatform, drawPlatforms } from "./lib/platforms.js";
 import { drawPlayer, updatePlayer } from "./lib/player.js";
 
-const canvas = document.getElementById("canvas");
+const canvas = document.getElementById('canvas');
 canvas.width = 800;
 canvas.height = 450;
 
 /**
  * @type {CanvasRenderingContext2D}
  */
- const context = canvas.getContext("2d");
+const context = canvas.getContext('2d');
+
+// Skapa spelets level
+createPlatform(200, canvas.height - 40, 500, 40);
 
 requestAnimationFrame(gameLoop);
 
 function gameLoop() {
-    requestAnimationFrame(gameLoop);
+  requestAnimationFrame(gameLoop);
 
-    //uppdatera alla game objekts.
-    updatePlayer();
+  //
+  // Uppdatera alla game objects.
+  //
 
-    //Rita ut alla game objekts
+  updatePlayer();
 
+  //
+  // Rit ut alla game objects
+  //
 
-    context.clearRect(0, 0, canvas.width,  canvas.height);
-
-    drawPlayer(context);
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  drawPlatforms(context);
+  drawPlayer(context);
 }
