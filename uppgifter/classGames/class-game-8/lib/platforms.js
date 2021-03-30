@@ -14,12 +14,12 @@ export function createPlatform(x, y, width, height) {
 /**
  * @param {CanvasRenderingContext2D} context 
  */
-export function drawPlatforms(context) {
+export function drawPlatforms(context, camera) {
   for(let i = 0; i < platforms.length; i++) {
     context.fillStyle = platforms[i].color;
     context.fillRect(
-      platforms[i].x,
-      platforms[i].y,
+      platforms[i].x - camera.x,
+      platforms[i].y - camera.y,
       platforms[i].width,
       platforms[i].height
     );

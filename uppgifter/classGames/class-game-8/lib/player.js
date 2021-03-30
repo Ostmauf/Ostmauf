@@ -6,7 +6,7 @@ const gravity = 0.5;
 
 let color = '#0066ff';
 
-const rect = {
+export const playerRect = {
   x: 0,
   y: 0,
   width: 40,
@@ -29,11 +29,11 @@ export function updatePlayer() {
   vx += getKey(keyCodes.arrowLeft) ? -5 : 0;
   vx += getKey(keyCodes.arrowRight) ? 5 : 0;
 
-  moveCollideX(vx, rect, platforms);
-  moveCollideY(vy, rect, platforms, onCollideY);
+  moveCollideX(vx, playerRect, platforms);
+  moveCollideY(vy, playerRect, platforms, onCollideY);
 
-  if(rect.y > 450 - rect.height) {
-    rect.y = 450 - rect.height;
+  if(playerRect.y > 450 - playerRect.height) {
+    playerRect.y = 450 - playerRect.height;
     vy = 0;
     grounded = true;
   }
@@ -42,9 +42,9 @@ export function updatePlayer() {
 /**
  * @param {CanvasRenderingContext2D} context 
  */
-export function drawPlayer(context) {
+export function drawPlayer(context, camera) {
   context.fillStyle = color;
-  context.fillRect(rect.x, rect.y, rect.width, rect.height);
+  context.fillRect(playerRect.x - camera.x, playerRect.y - camera.y, playerRect.width, playerRect.height);
 }
 
 function onCollideY(pawn, collisionObject) {

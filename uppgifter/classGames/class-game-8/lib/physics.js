@@ -5,16 +5,20 @@ export function moveCollideX(xDistance, pawn, collisionObjects) {
       const collisionOffset = pawn.x + pawn.width / 2 < collisionObjects[i].x + collisionObjects[i].width / 2
         ? pawn.x + pawn.width - collisionObjects[i].x
         : pawn.x - (collisionObjects[i].x + collisionObjects[i].width)
-
       pawn.x -= collisionOffset;
     }
   }
 }
 
-export function moveCollideY(yDistance, pawn, collisionObjects) {
+export function moveCollideY(yDistance, pawn, collisionObjects, collisionCallback) {
   pawn.y += yDistance;
   for(let i = 0; i < collisionObjects.length; i++) {
     if(rectOverlaps(pawn, collisionObjects[i])) {
+
+      if(collisionCallback) {
+        collisionCallback(pawn, collisionObjects[i]);
+      }
+
       const collisionOffset = pawn.y + pawn.height / 2 < collisionObjects[i].y + collisionObjects[i].height / 2
         ? pawn.y + pawn.height - collisionObjects[i].y
         : pawn.y - (collisionObjects[i].y + collisionObjects[i].height)
