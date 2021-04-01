@@ -16,8 +16,9 @@ const camera = {
 };
 
 // Skapa spelets level
-createPlatform(200, canvas.height - 40, 500, 40);
-createPlatform(400, canvas.height - 130, 200, 40);
+// skapa platform: x, y, width, height.
+createPlatform(900, canvas.height - 40 * 1, 40 * 1, 40 * 1);
+
 
 requestAnimationFrame(gameLoop);
 
@@ -30,7 +31,7 @@ function gameLoop() {
 
   updatePlayer();
   
-  camera.x = -canvas.width / 2 + playerRect.x;
+  camera.x = Math.max(0, playerRect.x - canvas.width/4);
 
   //
   // Rit ut alla game objects
